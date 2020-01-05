@@ -11,6 +11,8 @@ where
 
 Below we illustrate a few smiles under the model:
 
+![Image of Yaktocat](https://github.com/sigurdroemer/rough_heston/blob/master/smiles2.eps)
+
 The parameters are ... and we have defined log-moneyness := log(Strike/Forward).
 
 See also the file 'get_started.m'.
