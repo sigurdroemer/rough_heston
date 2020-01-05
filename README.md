@@ -11,7 +11,7 @@ where
 
 and 
 
-dW_1dW_2=\rho dt
+![dW_1dW_2=\rho dt](https://render.githubusercontent.com/render/math?math=dW_1dW_2%3D%5Crho%20dt)
 
 and where we restrict 
 
