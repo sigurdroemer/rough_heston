@@ -14,6 +14,10 @@ as proposed in (Lord & Kahl, 2006). To compute the characteristic function we so
 
 
 
+See the file 'get_started.m' to get started using the Matlab code yourself. In the folder '' you will find further scripts validiting the code and experimenting with various settings.
+
+
+
 Below we illustrate a few smiles under the model:
 
 ![Rough Heston Smiles](https://github.com/sigurdroemer/rough_heston/blob/master/smiles2.jpg)
@@ -23,10 +27,6 @@ The parameters are
 ![v_0=\bar{v}=0.15^2,\alpha=0.6,\lambda=2,\xi=0.4,\rho=-0.6](https://render.githubusercontent.com/render/math?math=v_0%3D%5Cbar%7Bv%7D%3D0.15%5E2%2C%5Calpha%3D0.6%2C%5Clambda%3D2%2C%5Cxi%3D0.4%2C%5Crho%3D-0.6)
 
 and we have defined log-moneyness := log(strike/forward).
-
-
-
-See the file 'get_started.m' to get started using the Matlab code yourself. In the folder '' you will find further scripts validiting the code and experimenting with various settings.
 
 
 
