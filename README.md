@@ -31,5 +31,7 @@ and we make the definition log-moneyness := log(strike/forward).
 
 ## References
 - Stefan Gerhold, Christoph Gerstenecker, Arpad Pinter, Moment explosions in the rough Heston model, Decisions in Economics and Finance (2019) 42:575-608.
-  - Roger lord and Christian Kahl, Optimal Fourier inversion in semi-analytical option pricing, available at SRRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=921336, 2006.
-  - Kai Diethelm, Neville J. Ford and Alan D. Freed, Detailed error analysis for a fractional ADAMs method, Numerical Algorithms 36:31-52, 2004.
+- Omar El Euch and Mathieu Rosenbaum, Perfect hedging in rough Heston models, Mathematical Finance 28(6), 3813-3856, 2018.
+- Omar El Euch and Mathieu Rosenbaum, The characteristic function of rough Heston models, Mathematical Finance 29(1), 3-38, 2019.
+- Roger lord and Christian Kahl, Optimal Fourier inversion in semi-analytical option pricing, available at SRRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=921336, 2006.
+- Kai Diethelm, Neville J. Ford and Alan D. Freed, Detailed error analysis for a fractional ADAMs method, Numerical Algorithms 36:31-52, 2004.
