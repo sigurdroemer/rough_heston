@@ -7,11 +7,11 @@ This project implements the (non-generalized) rough Heston model of (El Euch & R
 
 where r is the risk-free interest rate, q the dividend yield and where
 
-![K(t) = \frac{1}{\Gamma(\alpha)} t^{1-\alpha}](https://render.githubusercontent.com/render/math?math=K(t)%20%3D%20%5Cfrac%7B1%7D%7B%5CGamma(%5Calpha)%7D%20t%5E%7B1-%5Calpha%7D), ![dW_1dW_2=\rho dt](https://render.githubusercontent.com/render/math?math=dW_1dW_2%3D%5Crho%20dt), ![$\alpha \in (1/2,1), \rho \in [-1,1], (\lambda,\bar{v},v_0)$](https://render.githubusercontent.com/render/math?math=%24%5Calpha%20%5Cin%20%5B1%2F2%2C1%5D%2C%20%5Crho%20%3C%200%2C%20(%5Clambda%2C%5Cbar%7Bv%7D%2Cv_0)%24)>0.
+![K(t)=\frac{1}{\Gamma(\alpha)}t^{1-\alpha}, dW_1dW_2=\rho dt, \alpha \in (1/2,1\], \rho \in \[-1,1\], (\lambda,\bar{v},V(0)) \textgreater 0](https://render.githubusercontent.com/render/math?math=K(t)%3D%5Cfrac%7B1%7D%7B%5CGamma(%5Calpha)%7Dt%5E%7B1-%5Calpha%7D%2C%20dW_1dW_2%3D%5Crho%20dt%2C%20%5Calpha%20%5Cin%20(1%2F2%2C1%5D%2C%20%5Crho%20%5Cin%20%5B-1%2C1%5D%2C%20(%5Clambda%2C%5Cbar%7Bv%7D%2CV(0))%20%5Ctextgreater%200)
 
 
 ## Implementation
-The Matlab implementation is based on numerical integration using a Fourier transform as suggested in e.g. (Gerhold et al., 2019) with an optimal integration contour as proposed in (Lord & Kahl, 2006). To compute the characteristic function we solve the Volterra integral equation which appears in e.g. (El Euch & Rosenbaum, 2019) and that using the scheme from (Diethelm, 2004).
+The Matlab implementation is based on numerical integration using a Fourier transform as suggested in e.g. (Gerhold et al., 2019) with an optimal integration contour as proposed in (Lord & Kahl, 2006). To compute the characteristic function we solve the Volterra integral equation which appears in e.g. (El Euch & Rosenbaum, 2019) and that using the scheme from (Diethelm, 2004). The implementation assumes ![\rho < 0](https://render.githubusercontent.com/render/math?math=%5Crho%20%3C%200).
 
 See the file 'get_started.m' to get started using the code yourself. In the folder 'validation_and_test_scripts' you will find further scripts validiting the code and experimenting with various settings.
 
