@@ -11,9 +11,11 @@ where r is the risk-free interest rate, q the dividend yield and where
 
 
 ## Implementation
-The Matlab implementation is based on Fourier pricing methods as suggested in e.g. (Gerhold et al., 2019) with an optimal integration contour as proposed in (Lord & Kahl, 2006). To compute the characteristic function we solve the Volterra integral equation which appears in e.g. () and that using the scheme from (Diethelm, 2004).
+The Matlab implementation is based on numerical integration using a Fourier transform as suggested in e.g. (Gerhold et al., 2019) with an optimal integration contour as proposed in (Lord & Kahl, 2006). To compute the characteristic function we solve the Volterra integral equation which appears in e.g. (El Euch & Rosenbaum, 2019) and that using the scheme from (Diethelm, 2004).
 
-See the file 'get_started.m' to get started using the Matlab code yourself. In the folder '' you will find further scripts validiting the code and experimenting with various settings.
+See the file 'get_started.m' to get started using the code yourself. In the folder 'validation_and_test_scripts' you will find further scripts validiting the code and experimenting with various settings.
+
+Remark: The code was developed using Matlab 2019a and may not necessarily work on older versions.
 
 ## Illustration
 
