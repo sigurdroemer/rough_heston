@@ -22,7 +22,7 @@ Remark: The code was developed using Matlab 2019a and may not necessarily work o
 
 Below we illustrate a few smiles under the model:
 
-![Rough Heston Smiles](https://github.com/sigurdroemer/rough_heston/blob/master/smiles2.jpg)
+![Rough Heston Smiles](https://github.com/sigurdroemer/rough_heston/blob/master/smile2.jpg)
 
 The parameters are 
 
