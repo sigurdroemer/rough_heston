@@ -16,7 +16,7 @@ The Matlab implementation is based on numerical integration using the Fourier tr
 
 See the file 'get_started.m' to get started using the code yourself. In the folder 'validation_and_test_scripts' you will find further scripts validiting the code and experimenting with various settings.
 
-Remark: The code was developed using Matlab 2019a and may not necessarily work on older versions.
+Remark: The code was developed using Matlab 2019a and may not necessarily work in older versions.
 
 ## Illustration
 
