@@ -7,7 +7,8 @@ This project implements the (non-generalized) rough Heston model of (El Euch & R
 
 where r is the risk-free interest rate, q the dividend yield and where
 
-![K(t)=\frac{1}{\Gamma(\alpha)}t^{1-\alpha}, dW_1dW_2=\rho dt,  \frac{1}{2} \textless \alpha \leq 1,  -1 \leq \rho \leq 1 , (\lambda,\bar{v},V(0)) > 0](https://render.githubusercontent.com/render/math?math=K(t)%3D%5Cfrac%7B1%7D%7B%5CGamma(%5Calpha)%7Dt%5E%7B1-%5Calpha%7D%2C%20dW_1dW_2%3D%5Crho%20dt%2C%20%20%5Cfrac%7B1%7D%7B2%7D%20%5Ctextless%20%5Calpha%20%5Cleq%201%2C%20%20-1%20%5Cleq%20%5Crho%20%5Cleq%201%20%2C%20(%5Clambda%2C%5Cbar%7Bv%7D%2CV(0))%20%3E%200)
+![K(t)=\frac{1}{\Gamma(\alpha)}t^{1-\alpha}, dW_1dW_2=\rho dt,  \frac{1}{2} \textless \alpha \leq 1,  -1 \leq \rho \leq 1 , (\lambda,\xi,\bar{v},V(0)) > 0](https://render.githubusercontent.com/render/math?math=K(t)%3D%5Cfrac%7B1%7D%7B%5CGamma(%5Calpha)%7Dt%5E%7B1-%5Calpha%7D%2C%20dW_1dW_2%3D%5Crho%20dt%2C%20%20%5Cfrac%7B1%7D%7B2%7D%20%5Ctextless%20%5Calpha%20%5Cleq%201%2C%20%20-1%20%5Cleq%20%5Crho%20%5Cleq%201%20%2C%20(%5Clambda%2C%5Cxi%2C%5Cbar%7Bv%7D%2CV(0))%20%3E%200)
+
 
 
 ## Implementation
