@@ -112,21 +112,21 @@ nmax = p.Results.nmax;
 disp_iter = p.Results.disp_iter;
 
 if rho >= 0
-    error('FourierPricingRoughHeston: rho >= 0 is current not supported.');
+    error('NumericalIntegrationRoughHeston: rho >= 0 is current not supported.');
 end
 
 if alpha > 1 || alpha <= 1/2
-    error('FourierPricingRoughHeston: Alpha must lie in (1/2,1].');
+    error('NumericalIntegrationRoughHeston: Alpha must lie in (1/2,1].');
 end
 
 if any([v_0,lambda,v_bar,xi]) <= 0
-    error(['FourierPricingRoughHeston: v_0, lambda, v_bar and xi ',...
+    error(['NumericalIntegrationRoughHeston: v_0, lambda, v_bar and xi ',...
            'must be strictly positive.']);
 end
 
 
 if size(K,2) > 1 || size(T,2) > 1
-    error(['FourierPricingRoughHeston: Strike and expiration vectors ', ...
+    error(['NumericalIntegrationRoughHeston: Strike and expiration vectors ', ...
         'must be column vectors.']);
 end
 
@@ -182,7 +182,7 @@ if ~call
 end
 
 if price < 0
-    error('FourierPricingRoughHeston: Negative price computed. ');
+    error('NumericalIntegrationRoughHeston: Negative price computed. ');
 end
 
 % Scale and adjust back:
