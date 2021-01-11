@@ -1,4 +1,5 @@
 %% Add code to matlab path:
+clear;
 projFolder = fileparts(matlab.desktop.editor.getActiveFilename);
 addpath(genpath(projFolder));
 
