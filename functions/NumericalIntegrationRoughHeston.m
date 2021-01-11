@@ -189,7 +189,7 @@ end
 price = s_0*exp(-q*T).*price;
 
 % Compute implied volatilities:
-iv = blsimpv(s_0,K,r,T,price,'Yield',q);
+iv = blsimpv(s_0,K,r,T,price,'Yield',q,'class',call);
 
 end
 

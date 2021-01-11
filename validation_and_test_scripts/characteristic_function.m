@@ -1,4 +1,5 @@
-%% Add paths:
+%% Clear and add paths:
+clear all;
 currFolder = fileparts(matlab.desktop.editor.getActiveFilename);
 idcs   = strfind(currFolder,'\');
 projFolder = currFolder(1:idcs(end)-1);

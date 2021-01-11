@@ -1,4 +1,5 @@
-%% Add paths:
+%% Clear and add paths:
+clear;
 currFolder = fileparts(matlab.desktop.editor.getActiveFilename);
 idcs   = strfind(currFolder,'\');
 projFolder = currFolder(1:idcs(end)-1);
@@ -15,6 +16,7 @@ maturity = datenum('20200101','yyyymmdd');
 ttm = yearfrac(settle, maturity, 0);
 K = (50:5:150)';
 r = 0.05;q = 0.02;
+call = true; T = 1;
 price_true = optByHestonNI(r,s_0,settle,maturity,'call',K,v_0,...
                            v_bar,lambda,xi,rho,'DividendYield',q);
 iv_true = blsimpv(s_0,K,r,ttm,price_true,'Yield',q);
@@ -25,10 +27,10 @@ iv_true = blsimpv(s_0,K,r,ttm,price_true,'Yield',q);
 
 figure;
 yyaxis left
-plot(log(K/s0),iv - iv_true,'o-');
+plot(log(K/s_0),iv - iv_true,'o-');
 ylabel('Difference in implied volatility');
 yyaxis right
-plot(log(K/s0),price - price_true,'o-');
+plot(log(K/s_0),price - price_true,'o-');
 ylabel('Difference in (call option) prices');
 xlabel('Log-moneyness');title('Mathworks vs. rHeston code (alpha = 1)');
 

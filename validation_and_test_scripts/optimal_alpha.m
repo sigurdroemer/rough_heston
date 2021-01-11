@@ -1,4 +1,5 @@
-%% Add paths:
+%% Clear and add paths:
+clear;
 currFolder = fileparts(matlab.desktop.editor.getActiveFilename);
 idcs   = strfind(currFolder,'\');
 projFolder = currFolder(1:idcs(end)-1);
@@ -17,7 +18,7 @@ addpath(genpath(projFolder));
 
 % Set-up:
 v_0=0.2^2;v_bar=v_0;alpha_model=0.6;lambda=2;xi=0.2;rho=-0.6;
-N = 250;T=0.1;
+N = 250;T=0.1;nmax = 100;
 phi = @(u)(MomentGeneratingFunctionRoughHeston(v_0,alpha_model,lambda,...
                                                    v_bar,xi,rho,T,1i*u,N));
 T_star = @(u)(MomentExplosionTimeRoughHeston(alpha_model,lambda,xi,rho,u,nmax,true));
@@ -36,6 +37,7 @@ integrand = @(alpha,v)(real(psi(alpha,v).*exp(-1i*v*k')).*(exp(-alpha*k')./pi));
 % 'Alpha' here refers to the notation in (Lord & Kahl, 2006) and not the one 
 % from the rough Heston model.
 
+delta = 0.01;
 alpha_min = l_critical - 1;
 alpha_max = -1;delta_min = 1;delta_max = 10;
 alpha_test = (alpha_min+delta:1:alpha_max-delta_max)';
