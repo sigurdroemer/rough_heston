@@ -1,5 +1,5 @@
 # Rough Heston
-This project implements the rough Heston model of (El Euch & Rosenbaum, 2018) and (El Euch & Rosenbaum, 2019). Letting S(t) denote the time t price of the underlying asset, the model states the following under the risk-neutral measure 
+This project implements the rough Heston model of (El Euch & Rosenbaum, 2018) and (El Euch & Rosenbaum, 2019). Let S(t) denote the time t price of the underlying asset. The model then assumes the following under the risk-neutral measure 
 
 ![$dS(t) = S(t)(r-q)dt + S(t)\sqrt{V(t)}dW_1(t)$](https://render.githubusercontent.com/render/math?math=%24dS(t)%20%3D%20S(t)(r-q)dt%20%2B%20S(t)%5Csqrt%7BV(t)%7DdW_1(t)%24)
 
